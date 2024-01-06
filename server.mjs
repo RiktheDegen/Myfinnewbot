@@ -15,7 +15,7 @@ const __dirname = dirname(__filename);
 
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'dist/assets')));
+app.use(express.static(path.join(__dirname)));
 
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
