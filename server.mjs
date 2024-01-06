@@ -7,6 +7,7 @@ import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 3000;
 const server = createServer(app);
+app.use(cors());
 
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
