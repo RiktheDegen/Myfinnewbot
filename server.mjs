@@ -1,5 +1,6 @@
-import Express  from 'express';
-const path = require('path');
+import express  from 'express';
+import path from 'path';
+
 
 const app = express();
 const port = process.env.PORT || 3000;
