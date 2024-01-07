@@ -15,7 +15,7 @@ const App = (props) => {
     // 2. Extract configuration attributes
     // 3. Initialize the chat bot with the extracted configuration
     // Update the state accordingly
-    setLocalAssistantId(props.symbol);
+    // setLocalAssistantId(props.symbol);
   
     // ...
   
@@ -31,11 +31,11 @@ const App = (props) => {
     }
   };
 
-  console.log(props.symbol);
+  console.log(`${props.symbol} ${props.uid} ${props.theme}`);
   return (
     
     <div >
-      <Mybot symbol={props.symbol}/>
+      <Mybot symbol={props.symbol} uid={props.uid} theme={props.theme}/>
     </div>
   );
 

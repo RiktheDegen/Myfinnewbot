@@ -15,6 +15,9 @@ export const defaultConfig = {
 const Mybot = (props) => {
 
   const assistantId = props.symbol;
+  const userUid = props.uid;
+  const theme = props.theme;
+  
   const userAssitant = assistantId;
   
 
@@ -61,6 +64,7 @@ const Mybot = (props) => {
       const response = await axios.post('https://lorem-ipsum-demo-3115728536ba.herokuapp.com/api/messages', {
         text: newMessage,
         assistant: userAssitant,
+        uid: userUid,
       });
   //sample comment
       const botResponse = response.data.botResponse?.text;
